@@ -1,0 +1,96 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #fff2e5;
+    padding: 20px;
+}
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    flex: 1;
+}
+.column {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    align-self: flex-start;
+
+    &-header {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 0 10px 0;
+        margin: 0 0 20px 0;
+        border-bottom: 1px solid;
+        cursor: pointer;
+    }
+
+    &-footer {
+        background-color: #6fc9f1;
+        padding: 20px;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    &-add {
+        background-color: #6fc9f1;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-adder {
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        align-self: flex-start;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+}
+.note {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    border-radius: 6px;
+
+    &-header {
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        cursor: pointer;
+    }
+
+    &-body {
+        cursor: pointer;
+    }
+
+    &.dragged {
+        opacity: 0.01;
+    }
+
+    &.under {
+        opacity: 0.5;
+    }
+}

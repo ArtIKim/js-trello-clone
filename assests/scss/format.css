@@ -1,0 +1,122 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #fff2e5;
+  padding: 20px;
+}
+
+.columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.column {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.column-header {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.column-footer {
+  background-color: #6fc9f1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.column-add {
+  background-color: #6fc9f1;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column-adder {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.note {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  border-radius: 6px;
+}
+
+.note-header {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.note-body {
+  cursor: pointer;
+}
+
+.note.dragged {
+  opacity: 0.01;
+}
+
+.note.under {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=format.css.map */
